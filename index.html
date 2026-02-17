@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>Tin mới nhất</title>
+  <link type=image/x-icon rel=icon href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7p6Of/6ejn/+no5//p6Of/6ejn/+no5//p6Of/6ejn/+no5//p6Of/6ejn/+no5/8HBwdIAAAAAAAAABjq6ej/pFsA/6VcAP+lXAD/pFsA/6RaAP+iWQD/oFcA/55VAP+cUwD/mVAA/5ZNAP+TSQD/6uno/wAAACLr6un/qF8F/6lgAP/Ssor/6+rp/+vr6v+pYAD/p14A/6VcAP+jWgD/oFcA/51UAP+aUAD/lk0A/5JHAP/r6un/7ezr/6tfAP+tYwD/7u7t/+3t7P/t7ez/7ezr/61jAP+pXwD/plwA/6NZAP+hVgD/nVIA/5pRAP+WTQD/7ezr/+7u7f+wZQD/tGoA/+/v7v/v7+7/7+/u/+7u7f+xaAD/r2UA/6xjAP+pYAD/pVwA/6JYAP+dVAD/mVAA/+7u7f/w8O//tWkA/7lvAP/MmU3/8fHw//Hw8P+4bgD/tmwA//Dw7//w8O//8PDv//Dw7/+lXAD/oVcA/51TAP/w8O//8vLx/7puAP+9dAD/8Ore//Pz8v/z8/L/vXMA/7txAP/y8vH/8vLx//Ly8f/y8vH/8vPz/6RaAP+fVgD/8vLx//T08/+/cwD/w3kA/8iDF//19fT/9fX0/8J4AP+/dQD/vHIA/7huAP+0agD/sGYA/6thAP+mXQD/olgA//T08//29vb/w3cA/8d+AP/JgAD/yoAA/8l/AP/GfQD/w3kA/791AP+7cQD/t20A/7JpAP+tZAD/qF8A/6NaAP/29vb/AAAAFfj4+P/MggD/zoQA/8+FAP/49/X/y4EA/8d9AP/CeQD/vXQA/7lvAP+0agD/r2YA/6pgAP/4+Pj/sbGxaAAAAAD6+vr/+vr6//r6+v/6+vr/+fj0/86EAP/KgAD/xXsA/8B2AP+7cQD/+vr6//r6+v/6+vr/+vr6/wAAAAAAAAAAAAAAAAAAAAAAACUlJSL9/f3/0IcA/+S/ff/8/Pv/wXcA/7pvAP/8/Pv/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9/f3//f3+/8l8Af/9/f3/wXcA//39/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/v/+/v7//v7+//7+/v8AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMADAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAA+A8AAPgfAAD8PwAA//8AAA==" />
+  <style>
+    :root{
+      --bg1:#0ea5e9;--bg2:#a855f7;--bg3:#22d3ee;
+      --card:rgba(255,255,255,0.08);--card-border:rgba(255,255,255,0.25);
+      --text:#e6f4ff;--muted:#c4d7ffcc;--accent:#22d3ee;--ok:#10b981;--warn:#f59e0b;--error: #dc2626;
+    }
+
+    html, body{
+      height:100%;
+      min-height:100%;
+    }
+    html{ -webkit-text-size-adjust:100%; }
+    body{
+      margin:0; color:var(--text);
+      font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      display:grid; place-items:center;
+      overflow:hidden;
+      background:
+        radial-gradient(1200px 800px at 10% 10%, #0b1220 0%, transparent 60%),
+        radial-gradient(1000px 600px at 90% 20%, #0b1220 0%, transparent 60%),
+        linear-gradient(120deg, var(--bg1), var(--bg2), var(--bg3));
+      background-size:100% 100%,100% 100%,200% 200%;
+      animation:gradientShift 18s ease-in-out infinite;
+      position:relative; isolation:isolate;
+
+      padding:
+        max(8px, env(safe-area-inset-top))
+        max(8px, env(safe-area-inset-right))
+        max(8px, env(safe-area-inset-bottom))
+        max(8px, env(safe-area-inset-left));
+    }
+
+    body::after{
+      content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(255,255,255,.25), transparent 55%),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 40px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 40px);
+      mix-blend-mode:overlay;
+    }
+    @keyframes gradientShift{0%,100%{background-position:0 0,0 0,0% 50%}50%{background-position:0 0,0 0,100% 50%}}
+
+    .bb{
+      position:absolute; width:40vmin; height:40vmin; border-radius:50%;
+      filter:blur(40px); opacity:.18;
+      background: radial-gradient(circle at 30% 30%, var(--bg3), transparent 60%);
+      animation:float 30s ease-in-out infinite;
+    }
+    .bb:nth-child(1){ left:-10vmin; top:-10vmin; }
+    .bb:nth-child(2){ right:-12vmin; top:10vmin; animation-delay:-10s; }
+    .bb:nth-child(3){ left:20vmin; bottom:-12vmin; animation-delay:-5s; }
+    @keyframes float{ 50%{ transform:translateY(-4vmin) translateX(2vmin) scale(1.05);} }
+
+    .wrap{ width:min(960px, 92vw); padding:clamp(16px, 3vw, 32px); }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
+      border:1px solid var(--card-border);
+      border-radius:24px;
+      padding:clamp(20px, 5vw, 48px);
+      box-shadow:0 10px 40px rgba(0,0,0,0.35);
+      position:relative; overflow:hidden;
+    }
+    @supports ((-webkit-backdrop-filter:blur(10px)) or (backdrop-filter:blur(10px))){
+      .card{ backdrop-filter: blur(12px) saturate(110%); -webkit-backdrop-filter: blur(12px) saturate(110%); }
+    }
+
+    .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .75rem;border-radius:999px;
+      background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.4);color:#e0fbff;font-weight:600;
+      font-size:clamp(.825rem, 1.6vw, .9rem);letter-spacing:.02em;}
+    .badge .dot{width:.5rem;height:.5rem;border-radius:999px;background:var(--warn);box-shadow:0 0 12px var(--warn)}
+
+    h1{font-size:clamp(24px, 5vw, 44px);margin:12px 0 8px;line-height:1.2}
+    p.lead{color:var(--muted);font-size:clamp(14px, 1.8vw, 18px);margin:0 0 22px}
+
+    .hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(18px, 3vw, 32px);align-items:center}
+    .art{display:grid;place-items:center}
+    svg{max-width:420px;width:100%;height:auto;display:block}
+
+    .gear{transform-origin:center;animation:spin 10s linear infinite}
+    .gear.rev{animation-direction:reverse;animation-duration:14s}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .progress{height:10px;width:100%;border-radius:999px;position:relative;background:rgba(255,255,255,0.16);overflow:hidden;margin:18px 0 8px}
+    .progress .bar{position:absolute;inset:0;width:35%;
+      background:repeating-linear-gradient(-45deg, rgba(255,255,255,.85) 0 10px, rgba(255,255,255,.55) 10px 20px);
+      border-radius:999px;animation:load 1.4s ease-in-out infinite}
+    @keyframes load{0%{left:-40%}50%{left:30%}100%{left:100%}}
+
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:clamp(.85rem, 1.6vw, .95rem)}
+    .meta .pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:.35rem .6rem;border-radius:999px}
+
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{appearance:none;border:1px solid rgba(255,255,255,.24);color:#0a0f1a;font-weight:700;background:linear-gradient(180deg,#fff,#dff6ff);
+      padding:.75rem 1rem;border-radius:12px;cursor:pointer;text-decoration:none;transition:transform .15s ease, filter .15s ease;user-select:none}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+    .btn.alt{background:transparent;color:var(--text);border-color:rgba(255,255,255,.35)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:clamp(.8rem, 1.4vw, .9rem)}
+
+    @media (prefers-reduced-motion:reduce){
+      body,.gear,.gear.rev,.progress .bar,.bb{animation:none !important}
+    }
+    @media (max-width:720px){ .hero{grid-template-columns:1fr} .art{order:-1} }
+  </style>
+</head>
+<body>
+  <div class="bb"></div>
+  <div class="bb"></div>
+  <div class="bb"></div>
+
+  <div class="wrap">
+    <div class="card" role="region" aria-label="Thông báo">
+      <span class="badge"><span class="dot" aria-hidden="true"></span> Tin tức</span>
+      <div class="hero">
+        <div>
+          <h1>Website KHÔNG hoạt động!</h1>
+          <p class="lead">Chưa xác định.</p>
+
+          <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+          <div class="meta">
+            <span class="pill">Trạng thái: <strong style="color:var(--error)">DỪNG</strong></span>
+            <span class="pill">ETA: <strong id="eta">CHƯA XÁC ĐỊNH</strong></span>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="#" onclick="location.reload();return false;">↻ Thử lại</a>
+          </div>
+
+          <footer>
+            © <span id="year"></span> — TYHNHZI.
+          </footer>
+        </div>
+
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="128" cy="128" r="120" fill="#fff" opacity="0.06" />
+            <g class="gear" transform="translate(88,72)">
+              <circle cx="40" cy="40" r="32" fill="#8bdcff" stroke="#ffffff55" stroke-width="2"/>
+              <circle cx="40" cy="40" r="10" fill="#0b1220" opacity=".45"/>
+            </g>
+            <g class="gear rev" transform="translate(150,132) scale(.65)">
+              <circle cx="40" cy="40" r="32" fill="#cbb5ff" stroke="#ffffff55" stroke-width="2"/>
+              <circle cx="40" cy="40" r="10" fill="#0b1220" opacity=".4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const params = new URLSearchParams(location.search);
+    const eta = params.get('eta');
+    if (eta) document.getElementById('eta').textContent = eta;
+  </script>
+</body>
+</html>
